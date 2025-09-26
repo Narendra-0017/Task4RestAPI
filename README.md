@@ -261,6 +261,28 @@ All responses follow a consistent format:
 
 The application uses in-memory storage, so data is lost when the server restarts. For production use, consider integrating with a database like SQLite, PostgreSQL, or MongoDB.
 
+## Testing with Postman
+
+### Postman Collection
+You can import the Postman collection to test all endpoints:
+
+1. **Import Collection**: Download the `postman_collection.json` file
+2. **Import in Postman**: File → Import → Select the JSON file
+3. **Test All Endpoints**: Run the collection to test all CRUD operations
+
+### Test Results
+- ✅ All CRUD operations working
+- ✅ Error handling tested
+- ✅ Data validation working
+- ✅ JSON responses properly formatted
+
+### Screenshots
+![API Info Endpoint](screenshots/api-info.png)
+![Create User](screenshots/create-user.png)
+![Get All Users](screenshots/get-users.png)
+![Update User](screenshots/update-user.png)
+![Delete User](screenshots/delete-user.png)
+
 ## License
 
 This project is open source and available under the MIT License.
